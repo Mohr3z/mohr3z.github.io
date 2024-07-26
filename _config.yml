@@ -1,0 +1,52 @@
+# site settings
+title: Mohrez
+description: Taekwondo Kyo Sa Nim & Tech enthusiast
+email: mail@mohrez.net
+taglong: mohrez CV
+tagshort: MohammadReza Rahimi
+url: "https://mohrez.net/"
+baseurl: ""
+permalink: pretty
+twitter_username: username
+github_username: mohr3z
+linkedin_username: username
+stackoverflow_username: 8045491/username
+
+# author settings
+author:
+  name: MohammadReza Rahimi
+  email: mail@mohrez.net
+photo: /assets/jpg/mohrez.jpg
+# build settings
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+feed:
+  path: atom.xml
+
+autopages:
+  enabled: false
+
+pagination:
+  enabled: true
+  per_page: 1
+  sort_reverse: true
+  permalink: /:num/
+  title: ":title &middot; Page :num"
